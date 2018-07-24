@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test-Runner-firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.acttime.customertest.CustomerTest">
+        <methods>
+          <include name="CreateCustomerTest"/>
+          <include name="modifyCustomerTest"/>
+          <include name="configBM"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="configAM"/>
+          <include name="deleteCustomerTest"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.acttime.customertest.CustomerTest -->
+    </classes>
+  </test> <!-- Test-Runner-firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
